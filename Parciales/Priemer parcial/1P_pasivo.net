@@ -1,0 +1,30 @@
+* C:\users\renata\Escritorio\UTN\Teoría de Circuitos II\Personal\TCII\Parciales\Priemer parcial\1P_pasivo.asc
+R1 N001 Vi {R}
+C1 N001 0 {C1}
+L1 N001 0 {L1}
+XU1 V1 N001 V1 opamp Aol=100K GBW=10Meg
+R2 N002 V1 {R}
+C2 N002 0 {C2}
+L2 N002 0 {L2}
+V1 Vi 0 AC 1
+XU2 V2 N002 V2 opamp Aol=100K GBW=10Meg
+.ac dec 100 1e-3 1e2
+.lib opamp.sub
+.param w0 = 1
+.param R_n = 1
+.param C1_n = q_/(w01*R_n)
+.param w01 = 0.9562
+.param w02 = 1/w01
+.param q_ = 18.24
+.param L1_n = 1/(q_*w01)
+.param C2_n = q_/(w02*R_n)
+.param L2_n = 1/(q_*w02)
+.param ni = 1
+.param nf = 1
+.param R = R_n*ni
+.param C1 = C1_n/(ni*nf)
+.param L1 = (L1_n*ni)/nf
+.param C2 = C2_n/(ni*nf)
+.param L2 = (L2_n*ni)/nf
+.backanno
+.end

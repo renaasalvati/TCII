@@ -1,0 +1,12 @@
+* C:\users\renata\Escritorio\UTN\Teoría de Circuitos II\Personal\TCII\Trabajos semanales\TS6\TS6_1.asc
+L1 0 1 1
+L2 3 0 1
+R1 1 0 1
+R3 3 0 3
+R2 3 1 2
+V1 1 0 AC 1 Rser=1m
+K L1 L2 1
+.ac dec 100 0.1 1000
+.net I(R3) V1
+.backanno
+.end

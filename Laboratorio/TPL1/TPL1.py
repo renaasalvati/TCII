@@ -1,7 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Sun Jul 16 00:19:15 2023
+Created on Sunfig_sz_x = 13
+fig_sz_y = 7
+fig_dpi = 80 # dpi
+fig_font_size = 13
+
+mpl.rcParams['figure.figsize'] = (fig_sz_x, fig_sz_y)
+mpl.rcParams['figure.dpi'] = fig_dpi
+plt.rcParams.update({'font.size':fig_font_size}) Jul 16 00:19:15 2023
 
 @author: renata
 """

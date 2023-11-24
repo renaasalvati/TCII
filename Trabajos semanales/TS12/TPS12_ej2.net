@@ -1,0 +1,16 @@
+* Z:\home\renata\Escritorio\UTN\Teoría de Circuitos II\Personal\TCII\Trabajos semanales\TS12\TPS12_ej2.asc
+C2 N001 Vi {C2_n}
+C1 0 Vo {C1_n}
+L2 N001 0 {L2_n}
+L1 Vi Vo {L1_n}
+RL Vo 0 1
+I1 0 Vi AC 1 0
+.ac dec 100 1e-1 1e1
+.param C1_n = 1/(2*nf)
+.param C2_n = 3/(2*nf)
+.param L1_n = 34/(27*nf)
+.param f = 1
+.param nf = 2*pi*f
+.param L2_n = 2/(27*nf)
+.backanno
+.end
